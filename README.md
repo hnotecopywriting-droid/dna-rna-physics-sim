@@ -22,14 +22,14 @@
 | ⚡ **Inertia** | Lag/whip | Flow shear |
 | 💧 **Pressure** | Compress | Osmotic squeeze |
 | 😴 **Sleep/Wake** | Oscillate | Circadian folds |
-## 🧬 **Science Behind It**
+## 🧬 **Science Behind It**                                                                                                                                
+
 **RNA Stain** = Fluorescent R-loops (RNA invading DNA during transcription). Model simulates forces in gel electrophoresis:
 Deformation = Thermal(Noise) + Gravity(Sag) + Inertia(Lag) × Pressure + Sleep/Wake(Wave)
 
-
 - **Impacts**: High thermal ejects RNA; gravity pools it; pressure stabilizes hybrids.
 - **Research**: Test R-loop thresholds for anti-cancer drugs, optimize gels, generate ML datasets.
-**Full Manifesto** → [Science Tab in App](#)
+**Full Manifesto** → [Science Tab in App](#)                                                                                                                                                                                                                                                                                         
 ## 🚀 **Quick Start**
 ### Local Run
 ```bash
