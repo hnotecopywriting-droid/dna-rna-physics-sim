@@ -99,7 +99,15 @@ with tab1:
         zaxis=dict(backgroundcolor="black", gridcolor="darkblue"),
         camera=dict(eye=dict(x=1.5,y=1.5,z=1.5)), aspectmode='cube'), height=800, showlegend=True)
     st.markdown("<style>.plotly-graph-div {border:2px solid #00ffff;border-radius:15px;box-shadow:0 0 20px #00ffff;}</style>", unsafe_allow_html=True)
-    st.plotly_chart(fig, use_container_width=True, key='plot')
+    st.plotly_chart# Epic CSS for Hero Look
+st.markdown("""
+<style>
+.stApp { background: linear-gradient(135deg, #000428, #004e92); color: white; }
+.stTabs [data-baseweb="tab-list"] { background: rgba(0,255,255,0.1); border-radius: 10px; }
+.stPlotlyChart { box-shadow: 0 0 30px #00ffff !important; }
+.sidebar .sidebar-content { background: rgba(0,0,50,0.8); }
+</style>
+""", unsafe_allow_html=True)(fig, use_container_width=True, key='plot')
 
 with tab2:
     st.markdown("""
