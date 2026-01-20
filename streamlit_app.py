@@ -2,7 +2,7 @@ import streamlit as st
 import numpy as np
 import plotly.graph_objects as go
 
-st.set_page_config(page_title="🧬 DNA RNA Physics Sim", layout="wide", page_icon="🧬")
+st.set_page_config(page_title="🧬 dna rna physics sim", layout="wide", page_icon="🧬")
 
 with st.sidebar:
     st.markdown("# 🧬 Manifesto\nRNA hairs deform live!")
