@@ -12,7 +12,16 @@ with st.sidebar:
     if st.button("Dormant"): st.session_state.update({'thermal':0.2,'gravity':0.1,'inertia':1.0,'pressure':1.0,'sleep_wake':0.0}); st.rerun()
 
 if 'thermal' not in st.session_state:
-    st.session_state.update({'thermal':1.0,'gravity':0.5,'inertia':0.8,'pressure':1.0,'sleep_wake':0.5,'anim_time':0.0})
+    st.session_state.update({'thermal':1.0,'gravity':0.5,'inertia':0.8,'pressure':1.0,'sleep_wake':0.5,'anim_time':0.0})                                                                                                                                                            
+    if st.button("🎲 RANDOM PRESET"): 
+    presets = [
+        {'thermal':1.0,'gravity':0.5,'inertia':0.8,'pressure':1.0,'sleep_wake':0.5},
+        {'thermal':2.0,'gravity':0.3,'inertia':0.4,'pressure':0.8,'sleep_wake':1.0},
+        {'thermal':3.0,'gravity':2.0,'inertia':1.5,'pressure':2.0,'sleep_wake':0.2},
+        {'thermal':0.2,'gravity':0.1,'inertia':1.0,'pressure':1.0,'sleep_wake':0.0}
+    ]
+    import random; st.session_state.update(random.choice(presets)); st.session_state['anim_time']=0.0; st.rerun()
+
 
 tab1, tab2 = st.tabs(["🧬 Live Sim", "📚 Science"])
 
